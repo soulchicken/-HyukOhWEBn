@@ -9,7 +9,7 @@
             margin: 0;
         }
         a {
-            color: darkslategrey;
+            color: grey;
             text-decoration: none;
         }
         h1 {
@@ -45,8 +45,22 @@
 </head>
 
 <body>
+    
     <h1><a href="index.html" style="color: brown;">20 - 혁오(HYUKOH)</a></h1>
-    <div id="grid">
+
+    <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value === 'night') {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day';
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night';
+        }
+    ">
+    <div id="grid">    
         <div>
             <h2>2014.09.18</h2>
             <img src="cover.jpeg" width="100%">
